@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Вгадай Столицю Країни</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Вгадай столицю країни</h1>
+            <div id="question-container">
+                <p id="question"></p>
+                <input type="text" id="answer" placeholder="Введіть столицю"
+                    onkeypress="handleKeyPress(event)">
+                <button onclick="checkAnswer()">Перевірити</button>
+            </div>
+            <div id="result"></div>
+            <div id="revealed-picture"></div>
+            <button id="next-button" onclick="nextQuestion()">&#8594;</button>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
